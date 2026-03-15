@@ -31,7 +31,7 @@ jobs:
             const {
               data: { tag_name: ver }
             } = releaseResponse;
-            core.setOutput('FRIDA_VERSION', ver);
+            core.setOutput('FRIDA_VERSION', '17.7.1');
 
       - name: Split Repository Name
         id: split_name
