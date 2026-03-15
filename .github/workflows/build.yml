@@ -24,14 +24,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const releaseResponse = await github.repos.getLatestRelease({
-              owner: 'frida',
-              repo: 'frida',
-            })
-            const {
-              data: { tag_name: ver }
-            } = releaseResponse;
-            core.setOutput('FRIDA_VERSION', '17.7.0');
+            core.setOutput('FRIDA_VERSION', '17.7.1');
 
       - name: Split Repository Name
         id: split_name
